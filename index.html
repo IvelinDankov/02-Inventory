@@ -9,6 +9,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet">
+    <!-- Login google -->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="MY_CLIENT_ID_ON_GOOGLE_DEV.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <title>My Title</title>
   </head>
 
@@ -39,14 +44,16 @@
                 <input type="password" class="form__group-input">
               </div>
               <div class="form__group">
-                <label for="remember">Remember me for 30 days</label>
                 <input type="checkbox" class="input__checkbox">
+                <label for="remember">Remember me for 30 days</label>
                 <a href="" class="form__group-link">Forgot password</a>
               </div>
 
               <button type="submit" class="form__btn-submit">Sign in</button>
-              <button class="form__btn-google" type="">Google Log in</button>
-              <p class="form__register-text">Don't habe account? <a href="#register" class="form__register-link">Sign
+              <button class="google-sign-in-button" data-onsuccess="onSignIn">
+                Sign in with Google
+              </button>
+              <p class="form__register-text">Don't have account? <a href="#register" class="form__register-link">Sign
                   up</a></p>
             </form>
           </div>
