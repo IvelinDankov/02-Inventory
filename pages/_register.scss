@@ -41,17 +41,11 @@
     }
   }
 
-  .form {
+  .registerform {
     &__group {
       display: flex;
       flex-direction: column;
       margin-bottom: 1.4rem;
-
-      &:last-of-type {
-        flex-direction: row;
-        align-items: center;
-        gap: 0.5rem;
-      }
 
       &-link {
         display: block;

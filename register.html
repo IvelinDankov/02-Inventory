@@ -28,40 +28,45 @@
           </div>
           <div class="container__box-content">
             <h2 class="content__heading">
-              Log in to your account
+              Create an account
             </h2>
             <p class="content__subheading">
-              Welcome back! Please enter your details.
+              Start your 30-day free trial.
             </p>
 
-            <form class="form">
-              <div class="form__group">
-                <label for="email" class="form__group-label">Email</label>
-                <input type="email" class="form__group-input">
+            <form class="regesterform">
+              <div class="registerform__group">
+                <label for="username" class="registerform__group-label">Username</label>
+                <input type="text" id="username" class="registerform__group-input">
               </div>
-              <div class="form__group">
-                <label for="password" class="form__group-label">Password</label>
-                <input type="password" class="form__group-input">
+              <div class="registerform__group">
+                <label for="email" class="registerform__group-label">Email</label>
+                <input type="email" class="registerform__group-input">
               </div>
-              <div class="form__group">
-                <input type="checkbox" class="input__checkbox">
-                <label for="remember">Remember me for 30 days</label>
-                <a href="" class="form__group-link">Forgot password</a>
+              <div class="registerform__group">
+                <label for="password" class="registerform__group-label">Password</label>
+                <input type="password" class="registerform__group-input">
+              </div>
+              <div class="registerform__group">
+                <label for="re-password" class="registerform__group-label">Re-Password</label>
+                <input type="password" class="registerform__group-input">
               </div>
 
-              <button type="submit" class="form__btn-submit">Sign in</button>
+
+              <button type="submit" class="registerform__btn-submit">Get started</button>
               <button class="google-sign-in-button" data-onsuccess="onSignIn">
                 Sign in with Google
               </button>
-              <p class="form__register-text">Don't have account? <a href="#register" class="form__register-link">Sign
-                  up</a></p>
+              <p class="registerform__register-text">Don't have account? <a href="#register"
+                  class="registerform__register-link">Log
+                  in</a></p>
             </form>
           </div>
         </div>
       </div>
     </main>
 
-
   </body>
+
 
 </html>
