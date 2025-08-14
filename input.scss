@@ -1,144 +1,15 @@
-$color-primary-cta: rgb(21, 112, 239);
-$color-total-returned: rgb(132, 94, 188);
-$color-total-products: rgb(219, 163, 98);
-$color-total-instock: rgb(16, 183, 106);
-$color-total-outofstock: rgb(240, 68, 56);
-$color-border: rgb(240, 241, 243);
-$color-heading: rgb(56, 62, 73);
-$color-sub-heading: rgb(93, 102, 121);
-$color-body: rgb(133, 141, 157);
+@import "abstract/functions";
+@import "abstract/mixin";
+@import "abstract/variables";
 
-$color-white: #fff;
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-@use "sass:math";
+@import "pages/login";
 
-@mixin contaier($container: Center) {
-  max-width: 120rem;
-  margin: 0 auto;
-}
-
-@mixin btn($btn: Button) {
-  width: 100%;
-  padding: 1rem 1.8rem;
-  background-color: $color-primary-cta;
-  color: $color-white;
-  font-weight: 500;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-}
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-weight: normal;
-  line-height: 1.5;
-
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.container {
-  @include contaier;
-
-  &__box {
-    height: calc(100vh - 5vh);
-    padding: 5rem;
-    margin-top: 4rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3.6rem;
-    justify-content: space-around;
-    align-items: center;
-
-    &-logo {
-      display: flex;
-      flex-direction: column;
-      gap: 2.4rem;
-      align-items: center;
-    }
-
-    &-title {
-      font-weight: 700;
-      color: $color-heading;
-    }
-
-    &-content {
-      width: 36rem;
-    }
-  }
-
-  .content {
-    &__heading {
-      font-size: 3rem;
-      font-weight: semi-bold;
-      color: $color-heading;
-    }
-
-    &__subheading {
-      color: $color-body;
-      margin-bottom: 3.2rem;
-    }
-  }
-
-  .form {
-    &__group {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 1.4rem;
-
-      &:last-of-type {
-        flex-direction: row;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      &-link {
-        display: block;
-        margin-left: auto;
-        text-decoration: none;
-        font-weight: 500;
-        color: $color-primary-cta;
-      }
-
-      &-label {
-        font-size: 1.4rem;
-        color: $color-sub-heading;
-      }
-
-      &-input {
-        padding: 1rem 1.4rem;
-      }
-    }
-    &__btn-submit {
-      @include btn;
-    }
-
-    &__register-text {
-      text-align: center;
-      margin-top: 2.2rem;
-      color: $color-body;
-    }
-
-    &__register-link {
-      text-decoration: none;
-      color: $color-primary-cta;
-    }
-  }
-}
+// @use "sass:math";
 
 // google
 

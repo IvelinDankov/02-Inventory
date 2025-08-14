@@ -1,0 +1,88 @@
+.container {
+  @include contaier;
+
+  &__box {
+    height: calc(100vh - 5vh);
+    padding: 5rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.6rem;
+    justify-content: space-around;
+    align-items: center;
+
+    &-logo {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      align-items: center;
+    }
+
+    &-title {
+      font-weight: 700;
+      color: $color-heading;
+    }
+
+    &-content {
+      width: 36rem;
+    }
+  }
+
+  .content {
+    &__heading {
+      font-size: 3rem;
+      font-weight: semi-bold;
+      color: $color-heading;
+    }
+
+    &__subheading {
+      color: $color-body;
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  .form {
+    &__group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.4rem;
+
+      &:last-of-type {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      &-link {
+        display: block;
+        margin-left: auto;
+        text-decoration: none;
+        font-weight: 500;
+        color: $color-primary-cta;
+      }
+
+      &-label {
+        font-size: 1.4rem;
+        color: $color-sub-heading;
+      }
+
+      &-input {
+        padding: 1rem 1.4rem;
+      }
+    }
+    &__btn-submit {
+      @include btn;
+    }
+
+    &__register-text {
+      text-align: center;
+      margin-top: 2.2rem;
+      color: $color-body;
+    }
+
+    &__register-link {
+      text-decoration: none;
+      color: $color-primary-cta;
+    }
+  }
+}
