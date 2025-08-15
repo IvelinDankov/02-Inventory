@@ -1,5 +1,5 @@
 .container {
-  @include contaier;
+  @include container;
 
   &__box {
     height: calc(100vh - 5vh);
@@ -46,6 +46,7 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 1.4rem;
+      background-color: $color-white;
 
       &:last-of-type {
         flex-direction: row;

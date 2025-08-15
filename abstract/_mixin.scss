@@ -1,6 +1,10 @@
-@mixin contaier($container: Center) {
+@mixin container($container: Center) {
   max-width: 120rem;
-  margin: 0 auto;
+  margin: 8rem auto;
+  background-color: $color-white;
+  box-shadow: var(--shadow-dark);
+
+  min-height: 50rem;
 }
 
 @mixin btn($btn: Button) {
