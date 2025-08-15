@@ -48,58 +48,193 @@
       <div class="content">
         <nav class="sidebar">
           <ul class="side-nav">
-            <li class="side-nav-item">
-              <a href="" class="side-nav-link">
-                <svg class="icon-home">
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
                   <use xlink:href="images/sprite.svg#icon-home"></use>
                 </svg>
                 <span>Dashboard</span>
               </a>
             </li>
-            <li class="side-nav-item">
-              <a href="" class="side-nav-link">
-                <svg class="icon-home">
-                  <use xlink:href="images/sprite.svg#icon-home"></use>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-list"></use>
                 </svg>
                 <span>Inventory</span>
               </a>
             </li>
-            <li class="side-nav-item">
-              <a href="" class="side-nav-link">
-                <svg class="icon-home">
-                  <use xlink:href="images/sprite.svg#icon-home"></use>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-bar-graph"></use>
                 </svg>
                 <span>Reports</span>
               </a>
             </li>
-            <li class="side-nav-item">
-              <a href="" class="side-nav-link">
-                <svg class="icon-home">
-                  <use xlink:href="images/sprite.svg#icon-home"></use>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-user"></use>
                 </svg>
                 <span>Suppliers</span>
               </a>
             </li>
-            <li class="side-nav-item">
-              <a href="" class="side-nav-link">
-                <svg class="icon-home">
-                  <use xlink:href="images/sprite.svg#icon-home"></use>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-archive"></use>
                 </svg>
-                <span>Dashboard</span>
+                <span>Orders</span>
               </a>
             </li>
-            <li class="side-nav-item">
-              <a href="" class="side-nav-link">
-                <svg class="icon-home">
-                  <use xlink:href="images/sprite.svg#icon-home"></use>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-text-document-inverted"></use>
                 </svg>
-                <span>Dashboard</span>
+                <span>Manage Stroe</span>
               </a>
             </li>
           </ul>
+
+          <ul class="side-nav">
+
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-cog"></use>
+                </svg>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-log-out"></use>
+                </svg>
+                <span>Log Out</span>
+              </a>
+            </li>
+
+          </ul>
         </nav>
         <main class="main">
-          Main
+          <div class="sales-overview">
+            <h2 class="content-title">Sales Overview</h2>
+            <div class="sales-overview__content">
+              <div class="sales-overview__box">
+                <svg class="sales-overview__icon">
+                  <use xlink:href="images/sprite.svg#icon-gauge"></use>
+                </svg>
+                <p class="sales-overview__info">
+                  <span class="sales-overview__number">
+                    325
+                  </span>
+                  <span class="sales-overview__text">
+                    Sales
+                  </span>
+                </p>
+              </div>
+              <div class="sales-overview__box">
+                <svg class="sales-overview__icon">
+                  <use xlink:href="images/sprite.svg#icon-area-graph"></use>
+                </svg>
+                <p class="sales-overview__info">
+                  <span class="sales-overview__number">
+                    1300
+                  </span>
+                  <span class="sales-overview__text">
+                    Revenue
+                  </span>
+                </p>
+              </div>
+              <div class="sales-overview__box">
+                <svg class="sales-overview__icon">
+                  <use xlink:href="images/sprite.svg#icon-bar-graph"></use>
+                </svg>
+                <p class="sales-overview__info">
+                  <span class="sales-overview__number">
+                    868
+                  </span>
+                  <span class="sales-overview__text">
+                    Profit
+                  </span>
+                </p>
+              </div>
+              <div class="sales-overview__box">
+                <svg class="sales-overview__icon">
+                  <use xlink:href="images/sprite.svg#icon-home"></use>
+                </svg>
+                <p class="sales-overview__info">
+                  <span class="sales-overview__number">
+                    1300
+                  </span>
+                  <span class="sales-overview__text">
+                    Cost
+                  </span>
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="inventory-summary">
+            <h2 class="content-title">Inventory Summary</h2>
+            <div class="inventory-summary__content">
+
+              <div class="inventory-summary__box">
+                <svg class="inventory-summary__icon">
+                  <use xlink:href="images/sprite.svg#icon-box"></use>
+                </svg>
+                <p class="inventory-summary__info">
+                  <span class="inventory-summary__number">
+                    868
+                  </span>
+                  <span class="inventory-summary__text">
+                    Quantity
+                  </span>
+                </p>
+              </div>
+              <div class="inventory-summary__box">
+                <svg class="inventory-summary__icon">
+                  <use xlink:href="images/sprite.svg#icon-location"></use>
+                </svg>
+                <p class="inventory-summary__info">
+                  <span class="inventory-summary__number">
+                    200
+                  </span>
+                  <span class="inventory-summary__text">
+                    To be received
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="purchase">
+            <h2 class="content-title">Purchase Overview</h2>
+            purchase
+          </div>
+          <div class="product">
+            <h2 class="content-title">Product Summary</h2>
+            product
+          </div>
+          <div class="sales-and-purchase">
+            <h2 class="content-title">Sales & Purchase</h2>
+            sales and purchase
+          </div>
+          <div class="order">
+            <h2 class="content-title">Order Summary</h2>
+            order
+          </div>
+          <div class="top-selling">
+            <h2 class="content-title">Top Selling Stock</h2>
+            top
+          </div>
+          <div class="low-quantity">
+            <h2 class="content-title">Low Quantity Stock</h2>
+            low quantity
+          </div>
         </main>
       </div>
 

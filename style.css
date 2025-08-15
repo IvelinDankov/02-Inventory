@@ -274,14 +274,32 @@ body {
 }
 
 .sidebar {
-  background-color: var(--gray-50);
+  background-color: #fff;
   flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main {
   background-color: #fff;
   flex: 1;
-  background-color: lightcyan;
+  background-color: var(--gray-100);
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.main > * {
+  background-color: #fff;
+  border-radius: 0.3rem;
+  padding: 2rem;
+}
+.main > *:nth-child(odd) {
+  flex: 1 0 60%;
+}
+.main > *:nth-child(even) {
+  flex: 1 0 27%;
 }
 
 .logo {
@@ -306,7 +324,6 @@ body {
   font-size: inherit;
   color: inherit;
   background-color: var(--gray-50);
-  block-size: none;
   border: none;
   padding: 0.7rem 2rem;
   border-radius: 100px;
@@ -361,6 +378,144 @@ body {
   height: 3.75rem;
   border-radius: 50%;
   margin-right: 2rem;
+}
+
+/* Side nav */
+.side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.2rem;
+}
+.side-nav:last-child {
+  margin-bottom: 2.2rem;
+}
+.side-nav__item {
+  margin: 0 2rem;
+  position: relative;
+}
+.side-nav__item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.side-nav__item:active::before {
+  background-color: var(--primary-700);
+}
+.side-nav__item::before, .side-nav__items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: rgb(21, 112, 239);
+  transform: scaleY(0);
+  transition: 0.4s all;
+}
+.side-nav__item:hover::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+.side-nav__link:link, .side-nav__link:visited {
+  color: var(--gray-500);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  padding: 1rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+.side-nav__link:hover, .side-nav__link:active {
+  color: #fff;
+}
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 2rem;
+  fill: currentColor;
+}
+
+/* SALE OVERVIEW */
+.sales-overview__content,
+.inventory-summary__content {
+  display: flex;
+  justify-content: space-between;
+}
+.sales-overview__box,
+.inventory-summary__box {
+  width: 100%;
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.sales-overview__box:nth-child(1) > .sales-overview__icon,
+.sales-overview__box:nth-child(1) > .inventory-summary__icon,
+.inventory-summary__box:nth-child(1) > .sales-overview__icon,
+.inventory-summary__box:nth-child(1) > .inventory-summary__icon {
+  background-color: #e8f1fd;
+  fill: #629ff4;
+}
+.sales-overview__box:nth-child(2) > .sales-overview__icon,
+.sales-overview__box:nth-child(2) > .inventory-summary__icon,
+.inventory-summary__box:nth-child(2) > .sales-overview__icon,
+.inventory-summary__box:nth-child(2) > .inventory-summary__icon {
+  background-color: rgba(128, 122, 243, 0.1);
+  fill: #817af3;
+}
+.sales-overview__box:nth-child(3) > .sales-overview__icon,
+.sales-overview__box:nth-child(3) > .inventory-summary__icon,
+.inventory-summary__box:nth-child(3) > .sales-overview__icon,
+.inventory-summary__box:nth-child(3) > .inventory-summary__icon {
+  background-color: rgba(219, 163, 98, 0.2);
+  fill: #dba362;
+}
+.sales-overview__box:nth-child(4) > .sales-overview__icon,
+.sales-overview__box:nth-child(4) > .inventory-summary__icon,
+.inventory-summary__box:nth-child(4) > .sales-overview__icon,
+.inventory-summary__box:nth-child(4) > .inventory-summary__icon {
+  background-color: rgba(88, 211, 100, 0.2);
+  fill: #58d365;
+}
+.sales-overview__box:not(:last-child),
+.inventory-summary__box:not(:last-child) {
+  border-right: 1px solid var(--gray-100);
+}
+.sales-overview__info,
+.inventory-summary__info {
+  width: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.sales-overview__number,
+.inventory-summary__number {
+  color: var(--gray-600);
+  font-weight: 600;
+}
+.sales-overview__icon,
+.inventory-summary__icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  padding: 5px;
+}
+
+/* INVENTORY SUMMARY */
+.inventory-summary__box:nth-child(1) > .inventory-summary__icon {
+  background-color: rgba(219, 163, 98, 0.2);
+  fill: #dba362;
+}
+.inventory-summary__box:nth-child(2) > .inventory-summary__icon {
+  background-color: rgba(128, 122, 243, 0.1);
+  fill: #817af3;
+}
+
+.content-title {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: var(--gray-800);
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

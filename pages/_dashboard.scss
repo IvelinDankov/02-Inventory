@@ -19,14 +19,38 @@
 }
 
 .sidebar {
-  background-color: var(--gray-50);
+  background-color: $color-white;
   flex: 0 0 18%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main {
   background-color: $color-white;
   flex: 1;
-  background-color: lightcyan;
+  background-color: var(--gray-100);
+  padding: 2rem;
+
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  // TODO: Remove this hight
+
+  & > * {
+    background-color: $color-white;
+    border-radius: 0.3rem;
+    padding: 2rem;
+  }
+
+  & > *:nth-child(odd) {
+    flex: 1 0 60%;
+  }
+  & > *:nth-child(even) {
+    flex: 1 0 27%;
+  }
 }
 
 .logo {
