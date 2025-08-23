@@ -10,5 +10,8 @@
   "keywords": [],
   "author": "VD",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "chart.css": "^0.1.1"
+  }
 }

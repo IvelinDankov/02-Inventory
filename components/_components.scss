@@ -126,7 +126,7 @@
     left: 0;
     height: 100%;
     width: 3px;
-    background-color: $color-primary-cta;
+    background-color: var(--color-primary-cta);
     transform: scaleY(0);
     transition: 0.4s all;
   }
@@ -152,7 +152,7 @@
 
   &__link:hover,
   &__link:active {
-    color: $color-white;
+    color: var(--color-white);
   }
 
   &__icon {
@@ -308,4 +308,58 @@
     padding: 1rem 0;
     border-bottom: 1px solid var(--gray-100);
   }
+}
+
+/* Bar Chart */
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  height: 200px;
+  gap: 10px;
+}
+.bar {
+  width: 40px;
+  background-color: steelblue;
+  text-align: center;
+  color: white;
+}
+.bar span {
+  display: block;
+  margin-top: 5px;
+}
+
+/* ORDER  CHART */
+
+.chart-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.chart-title svg {
+  background: white;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+.label {
+  font-size: 12px;
+  fill: #333;
+}
+.line-ordered {
+  stroke: #a0522d;
+  stroke-width: 2;
+  fill: none;
+}
+.line-delivered {
+  stroke: #87ceeb;
+  stroke-width: 2;
+  fill: none;
+}
+.dot {
+  fill: white;
+  stroke-width: 2;
 }

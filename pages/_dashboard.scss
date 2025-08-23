@@ -4,7 +4,7 @@
 
 .header {
   font-size: 1.4rem;
-  background-color: $color-white;
+  background-color: var(--color-white);
   height: 7rem;
   width: 100%;
   border-bottom: 1px solid var(--gray-200);
@@ -19,7 +19,7 @@
 }
 
 .sidebar {
-  background-color: $color-white;
+  background-color: var(--color-white);
   flex: 0 0 18%;
   min-height: 70vh;
 
@@ -29,7 +29,7 @@
 }
 
 .main {
-  background-color: $color-white;
+  background-color: var(--color-white);
   flex: 1;
   background-color: var(--gray-100);
   padding: 2rem;
@@ -41,7 +41,7 @@
   // TODO: Remove this hight
 
   & > * {
-    background-color: $color-white;
+    background-color: var(--color-white);
     border-radius: 0.3rem;
     padding: 2rem;
   }

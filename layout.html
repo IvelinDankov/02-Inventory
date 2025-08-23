@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+    <!-- Login google -->
+    <meta name="google-signin-scope" content="profile email" />
+    <meta name="google-signin-client_id" content="MY_CLIENT_ID_ON_GOOGLE_DEV.apps.googleusercontent.com" />
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>My Title</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="logo" src="./images/logo.svg" alt="logo" />
+
+        <form class="search">
+          <input type="text" class="search__input" name="" value="" placeholder="Product, supplier, order..." />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="./images/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#icon-bell"></use>
+            </svg>
+          </div>
+          <div class="user-nav__user">
+            <img class="user-nav__user-photo" src="images/user-photo.jpg" alt="user photo" />
+            <span class="user-nav__user-name">Pescho</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-list"></use>
+                </svg>
+                <span>Inventory</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-bar-graph"></use>
+                </svg>
+                <span>Reports</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-user"></use>
+                </svg>
+                <span>Suppliers</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-archive"></use>
+                </svg>
+                <span>Orders</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-text-document-inverted"></use>
+                </svg>
+                <span>Manage Stroe</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="side-nav">
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-cog"></use>
+                </svg>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-log-out"></use>
+                </svg>
+                <span>Log Out</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <main class="main">
+          <!--  main content -->
+        </main>
+      </div>
+    </div>
+  </body>
+
+</html>

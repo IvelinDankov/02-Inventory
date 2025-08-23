@@ -1,16 +1,15 @@
-$color-primary-cta: rgb(21, 112, 239);
-$color-total-returned: rgb(132, 94, 188);
-$color-total-products: rgb(219, 163, 98);
-$color-total-instock: rgb(16, 183, 106);
-$color-total-outofstock: rgb(240, 68, 56);
-$color-border: rgb(240, 241, 243);
-$color-heading: rgb(56, 62, 73);
-$color-sub-heading: rgb(93, 102, 121);
-$color-body: rgb(133, 141, 157);
-
-$color-white: #fff;
-
 :root {
+  --color-primary-cta: rgb(21, 112, 239);
+  --color-total-returned: rgb(132, 94, 188);
+  --color-total-products: rgb(219, 163, 98);
+  --color-total-instock: rgb(16, 183, 106);
+  --color-total-outofstock: rgb(240, 68, 56);
+  --color-border: rgb(240, 241, 243);
+  --color-heading: rgb(56, 62, 73);
+  --color-sub-heading: rgb(93, 102, 121);
+  --color-body: rgb(133, 141, 157);
+
+  --color-white: #fff;
   --gray-50: #f0f1f3;
   --gray-100: #d0d3d9;
   --gray-200: #b9bdc7;

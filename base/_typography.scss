@@ -16,7 +16,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 
-  color: $color-body;
+  color: var(--color-body);
 
   min-height: 100vh;
 }

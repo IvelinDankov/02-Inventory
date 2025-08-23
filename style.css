@@ -1,4 +1,15 @@
+@import "charts.css";
 :root {
+  --color-primary-cta: rgb(21, 112, 239);
+  --color-total-returned: rgb(132, 94, 188);
+  --color-total-products: rgb(219, 163, 98);
+  --color-total-instock: rgb(16, 183, 106);
+  --color-total-outofstock: rgb(240, 68, 56);
+  --color-border: rgb(240, 241, 243);
+  --color-heading: rgb(56, 62, 73);
+  --color-sub-heading: rgb(93, 102, 121);
+  --color-body: rgb(133, 141, 157);
+  --color-white: #fff;
   --gray-50: #f0f1f3;
   --gray-100: #d0d3d9;
   --gray-200: #b9bdc7;
@@ -41,7 +52,7 @@ body {
   background-image: linear-gradient(to right bottom, var(--primary-600), var(--primary-700));
   background-size: cover;
   background-repeat: no-repeat;
-  color: rgb(133, 141, 157);
+  color: var(--color-body);
   min-height: 100vh;
 }
 
@@ -90,7 +101,7 @@ body {
 .container {
   max-width: 120rem;
   margin: 8rem auto;
-  background-color: #fff;
+  background-color: var(--color-white);
   box-shadow: var(--shadow-dark);
   min-height: 50rem;
 }
@@ -112,7 +123,7 @@ body {
 }
 .container__box-title {
   font-weight: 700;
-  color: rgb(56, 62, 73);
+  color: var(--color-heading);
 }
 .container__box-content {
   width: 36rem;
@@ -120,17 +131,17 @@ body {
 .container .content__heading {
   font-size: 3rem;
   font-weight: bolder;
-  color: rgb(56, 62, 73);
+  color: var(--color-heading);
 }
 .container .content__subheading {
-  color: rgb(133, 141, 157);
+  color: var(--color-body);
   margin-bottom: 3.2rem;
 }
 .container .form__group {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.4rem;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 .container .form__group:last-of-type {
   flex-direction: row;
@@ -142,11 +153,11 @@ body {
   margin-left: auto;
   text-decoration: none;
   font-weight: 500;
-  color: rgb(21, 112, 239);
+  color: var(--color-primary-cta);
 }
 .container .form__group-label {
   font-size: 1.4rem;
-  color: rgb(93, 102, 121);
+  color: var(--color-sub-heading);
 }
 .container .form__group-input {
   padding: 1rem 1.4rem;
@@ -154,8 +165,8 @@ body {
 .container .form__btn-submit {
   width: 100%;
   padding: 1rem 1.8rem;
-  background-color: rgb(21, 112, 239);
-  color: #fff;
+  background-color: var(--color-primary-cta);
+  color: var(--color-white);
   font-weight: 500;
   border-radius: 4px;
   border: none;
@@ -164,17 +175,17 @@ body {
 .container .form__register-text {
   text-align: center;
   margin-top: 2.2rem;
-  color: rgb(133, 141, 157);
+  color: var(--color-body);
 }
 .container .form__register-link {
   text-decoration: none;
-  color: rgb(21, 112, 239);
+  color: var(--color-primary-cta);
 }
 
 .container {
   max-width: 120rem;
   margin: 8rem auto;
-  background-color: #fff;
+  background-color: var(--color-white);
   box-shadow: var(--shadow-dark);
   min-height: 50rem;
 }
@@ -196,7 +207,7 @@ body {
 }
 .container__box-title {
   font-weight: 700;
-  color: rgb(56, 62, 73);
+  color: var(--color-heading);
 }
 .container__box-content {
   width: 36rem;
@@ -204,14 +215,14 @@ body {
 .container .content__heading {
   font-size: 3rem;
   font-weight: bolder;
-  color: rgb(56, 62, 73);
+  color: var(--color-heading);
 }
 .container .content__subheading {
-  color: rgb(133, 141, 157);
+  color: var(--color-body);
   margin-bottom: 3.2rem;
 }
 .container .registerform__group {
-  background-color: #fff;
+  background-color: var(--color-white);
   display: flex;
   flex-direction: column;
   margin-bottom: 1.4rem;
@@ -221,11 +232,11 @@ body {
   margin-left: auto;
   text-decoration: none;
   font-weight: 500;
-  color: rgb(21, 112, 239);
+  color: var(--color-primary-cta);
 }
 .container .registerform__group-label {
   font-size: 1.4rem;
-  color: rgb(93, 102, 121);
+  color: var(--color-sub-heading);
 }
 .container .registerform__group-input {
   padding: 1rem 1.4rem;
@@ -233,8 +244,8 @@ body {
 .container .registerform__btn-submit {
   width: 100%;
   padding: 1rem 1.8rem;
-  background-color: rgb(21, 112, 239);
-  color: #fff;
+  background-color: var(--color-primary-cta);
+  color: var(--color-white);
   font-weight: 500;
   border-radius: 4px;
   border: none;
@@ -243,24 +254,24 @@ body {
 .container .registerform__register-text {
   text-align: center;
   margin-top: 2.2rem;
-  color: rgb(133, 141, 157);
+  color: var(--color-body);
 }
 .container .registerform__register-link {
   text-decoration: none;
-  color: rgb(21, 112, 239);
+  color: var(--color-primary-cta);
 }
 
 .container {
   max-width: 120rem;
   margin: 8rem auto;
-  background-color: #fff;
+  background-color: var(--color-white);
   box-shadow: var(--shadow-dark);
   min-height: 50rem;
 }
 
 .header {
   font-size: 1.4rem;
-  background-color: #fff;
+  background-color: var(--color-white);
   height: 7rem;
   width: 100%;
   border-bottom: 1px solid var(--gray-200);
@@ -274,7 +285,7 @@ body {
 }
 
 .sidebar {
-  background-color: #fff;
+  background-color: var(--color-white);
   flex: 0 0 18%;
   min-height: 70vh;
   display: flex;
@@ -283,7 +294,7 @@ body {
 }
 
 .main {
-  background-color: #fff;
+  background-color: var(--color-white);
   flex: 1;
   background-color: var(--gray-100);
   padding: 2rem;
@@ -292,7 +303,7 @@ body {
   flex-wrap: wrap;
 }
 .main > * {
-  background-color: #fff;
+  background-color: var(--color-white);
   border-radius: 0.3rem;
   padding: 2rem;
 }
@@ -407,7 +418,7 @@ body {
   left: 0;
   height: 100%;
   width: 3px;
-  background-color: rgb(21, 112, 239);
+  background-color: var(--color-primary-cta);
   transform: scaleY(0);
   transition: 0.4s all;
 }
@@ -427,7 +438,7 @@ body {
   align-items: center;
 }
 .side-nav__link:hover, .side-nav__link:active {
-  color: #fff;
+  color: var(--color-white);
 }
 .side-nav__icon {
   width: 1.75rem;
@@ -632,6 +643,65 @@ body {
 .top-body tr td {
   padding: 1rem 0;
   border-bottom: 1px solid var(--gray-100);
+}
+
+/* Bar Chart */
+.chart {
+  display: flex;
+  align-items: flex-end;
+  height: 200px;
+  gap: 10px;
+}
+
+.bar {
+  width: 40px;
+  background-color: steelblue;
+  text-align: center;
+  color: white;
+}
+
+.bar span {
+  display: block;
+  margin-top: 5px;
+}
+
+/* ORDER  CHART */
+.chart-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.chart-title svg {
+  background: white;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+
+.label {
+  font-size: 12px;
+  fill: #333;
+}
+
+.line-ordered {
+  stroke: #a0522d;
+  stroke-width: 2;
+  fill: none;
+}
+
+.line-delivered {
+  stroke: #87ceeb;
+  stroke-width: 2;
+  fill: none;
+}
+
+.dot {
+  fill: white;
+  stroke-width: 2;
 }
 
 /*# sourceMappingURL=style.css.map */

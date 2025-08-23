@@ -249,11 +249,59 @@
           </div>
           <div class="sales-and-purchase">
             <h2 class="content-title">Sales & Purchase</h2>
-            sales and purchase
+            <!-- CHART -->
+            <div class="chart">
+              ...
+              <div class="bar" style="height: 40%"><span>40%</span></div>
+              <div class="bar" style="height: 80%"><span>80%</span></div>
+              <div class="bar" style="height: 30%"><span>30%</span></div>
+              ..
+            </div>
+
+
+
           </div>
           <div class="order">
             <h2 class="content-title">Order Summary</h2>
-            order
+            <div class="chart-title">Order Summary</div>
+            <svg viewBox="0 0 600 300">
+              <!-- Axes -->
+              <line x1="50" y1="20" x2="50" y2="250" stroke="#ccc" />
+              <line x1="50" y1="250" x2="550" y2="250" stroke="#ccc" />
+
+              <!-- Y-axis labels -->
+              <text x="10" y="250" class="label">0</text>
+              <text x="10" y="200" class="label">1000</text>
+              <text x="10" y="150" class="label">2000</text>
+              <text x="10" y="100" class="label">3000</text>
+              <text x="10" y="50" class="label">4000</text>
+
+              <!-- X-axis labels -->
+              <text x="90" y="270" class="label">Jan</text>
+              <text x="170" y="270" class="label">Feb</text>
+              <text x="250" y="270" class="label">Mar</text>
+              <text x="330" y="270" class="label">Apr</text>
+              <text x="410" y="270" class="label">May</text>
+
+              <!-- Ordered line -->
+              <polyline class="line-ordered" points="90,80 170,200 250,130 330,180 410,160" />
+              <!-- Delivered line -->
+              <polyline class="line-delivered" points="90,70 170,150 250,100 330,140 410,120" />
+
+              <!-- Dots for Ordered -->
+              <circle cx="90" cy="80" r="4" class="dot" stroke="#a0522d" />
+              <circle cx="170" cy="200" r="4" class="dot" stroke="#a0522d" />
+              <circle cx="250" cy="130" r="4" class="dot" stroke="#a0522d" />
+              <circle cx="330" cy="180" r="4" class="dot" stroke="#a0522d" />
+              <circle cx="410" cy="160" r="4" class="dot" stroke="#a0522d" />
+
+              <!-- Dots for Delivered -->
+              <circle cx="90" cy="70" r="4" class="dot" stroke="#87ceeb" />
+              <circle cx="170" cy="150" r="4" class="dot" stroke="#87ceeb" />
+              <circle cx="250" cy="100" r="4" class="dot" stroke="#87ceeb" />
+              <circle cx="330" cy="140" r="4" class="dot" stroke="#87ceeb" />
+              <circle cx="410" cy="120" r="4" class="dot" stroke="#87ceeb" />
+            </svg>
           </div>
           <div class="top-selling">
             <h2 class="content-title">Top Selling Stock</h2>

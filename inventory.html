@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+    <!-- Login google -->
+    <meta name="google-signin-scope" content="profile email" />
+    <meta name="google-signin-client_id" content="MY_CLIENT_ID_ON_GOOGLE_DEV.apps.googleusercontent.com" />
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>My Title</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="logo" src="./images/logo.svg" alt="logo" />
+
+        <form class="search">
+          <input type="text" class="search__input" name="" value="" placeholder="Product, supplier, order..." />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="./images/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#icon-bell"></use>
+            </svg>
+          </div>
+          <div class="user-nav__user">
+            <img class="user-nav__user-photo" src="images/user-photo.jpg" alt="user photo" />
+            <span class="user-nav__user-name">Pescho</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-list"></use>
+                </svg>
+                <span>Inventory</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-bar-graph"></use>
+                </svg>
+                <span>Reports</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-user"></use>
+                </svg>
+                <span>Suppliers</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-archive"></use>
+                </svg>
+                <span>Orders</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-text-document-inverted"></use>
+                </svg>
+                <span>Manage Stroe</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="side-nav">
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-cog"></use>
+                </svg>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-log-out"></use>
+                </svg>
+                <span>Log Out</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <main class="main">
+          <!--  main content -->
+
+          <div class="overall-inventory">
+            <h2 class="overall-inventory__title">Overall Inventory</h2>
+            <div class="overall-inventory__content">
+              <div class="overall-inventory__box">
+                <h5 class="overall-inventory__heading">Categories</h5>
+                <p class="overall-category__number">14</p>
+                <span class="overall-category__span">Last 7 days</span>
+
+              </div>
+              <div class="overall-inventory__box">
+                <h5 class="overall-inventory__heading">Total Products</h5>
+                <div class="overall-inventory__small">
+
+                  <p class="overall-category__number">868</p>
+                  <span class="overall-category__span">Last 7 days</span>
+                  <p class="overall-category__number">868</p>
+                  <span class="overall-category__span">Revenue</span>
+
+                </div>
+                <div class="overall-inventory__box">
+                  <h5 class="overall-inventory__heading">Top Selling</h5>
+                  <div class="overall-inventory__small">
+
+                    <p class="overall-category__number">5</p>
+                    <span class="overall-category__span">Last 7 days</span>
+                    <p class="overall-category__number">2500</p>
+                    <span class="overall-category__span">Cost</span>
+
+                  </div>
+                  <div class="overall-inventory__box">
+                    <h5 class="overall-inventory__heading">Low Stocks</h5>
+                    <div class="overall-inventory__small">
+
+                      <p class="overall-category__number">12</p>
+                      <span class="overall-category__span">Ordered</span>
+                      <p class="overall-category__number">2</p>
+                      <span class="overall-category__span">Not in Stock</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="overall-inventory__products">
+                  <header class="overall-iventory__header">
+
+                    <h2 class="overall-inventory__title"> Products </h2>
+                    <menu>
+                      <button type="button">add Product</button>
+                      <select aria-placeholder="Filter">
+                        <option value="">all</option>
+                      </select>
+                      <button type="download">Download all</button>
+                    </menu>
+                  </header>
+
+                  <table class="overall-inventory__table">
+                    <thead>
+                      <tr>
+                        <td>Products</td>
+                        <td>Buying Price</td>
+                        <td>quantity</td>
+                        <td>Threshold-value</td>
+                        <td>Expiry-Date</td>
+                        <td>Availability</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Maggi</td>
+                        <td>430</td>
+                        <td>43 Packets</td>
+                        <td>12 Packets</td>
+                        <td>11/12/22</td>
+                        <td>in stock/out of stock</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+
+        </main>
+      </div>
+    </div>
+  </body>
+
+</html>
